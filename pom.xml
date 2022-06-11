@@ -1,0 +1,28 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>coinbit</groupId>
+    <artifactId>the-web</artifactId>
+    <version>0.5</version>
+    <packaging>war</packaging>
+    <properties>
+        <maven.compiler.source>18</maven.compiler.source>
+        <maven.compiler.target>18</maven.compiler.target>
+    </properties>
+    <build>
+        <sourceDirectory>java</sourceDirectory>
+        <testSourceDirectory>test</testSourceDirectory>
+        <plugins>
+            <plugin>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.3.2</version>
+            <configuration>
+                <webResources>
+                    <resource>
+                        <directory>web</directory>
+                    </resource>
+                </webResources>
+            </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
